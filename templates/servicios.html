@@ -1,0 +1,119 @@
+{% extends './base.html' %} {% block title %} Servicios {% endblock %} {% block serviciosActive %} active {% endblock %} {% block
+body %}
+<section class="container marketing">
+  <h1 style="color: white">Servicios</h1>
+  <h2 style="color: white">Aqui ofrecemos una lista de los diversos servicios que ZoelRacing ofrece.</h2>
+  <p style="color: aliceblue;"> Si lo que busca no se encuentra en la lista haga una consulta.</p>
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+    <div class="col">
+      <div class="card shadow-sm">
+        <img alt="Se hace service comleto a la imagen" class="bd-placeholder-img card-img-top" width="100%" height="225" src="{{url_for('static', filename='images/serviscompleto.jpg')}}"/>
+        <div class="card-body">
+          <p class="card-text">Servis completo </p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card shadow-sm">
+        <img alt="reparación motor" class="bd-placeholder-img card-img-top" width="100%" height="225" src="{{url_for('static', filename='images/reparacionmotor.png')}}"/>
+        <div class="card-body">
+          <p class="card-text">Motores</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card shadow-sm">
+        <img alt="frenos de moto" class="bd-placeholder-img card-img-top" width="100%" height="225" src="{{url_for('static', filename='images/frenos-moto.jpeg')}}"/>
+        <div class="card-body">
+          <p class="card-text">Frenos</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card shadow-sm">
+        <img alt="Suspención" class="bd-placeholder-img card-img-top" width="100%" height="225" src="{{url_for('static', filename='images/suspensiones.jpg')}}"/>
+        <div class="card-body">
+          <p class="card-text">Suspención</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card shadow-sm">
+        <img alt="Tapizado" class="bd-placeholder-img card-img-top" width="100%" height="225" src="{{url_for('static', filename='images/tapizado.jpg')}}"/>
+        <div class="card-body">
+          <p class="card-text">Tapizado</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card shadow-sm">
+        <img alt="Transmiciones" class="bd-placeholder-img card-img-top" width="100%" height="225" src="{{url_for('static', filename='images/transmisiones.jpg')}}"/>
+        <div class="card-body">
+          <p class="card-text">Transmiciones</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card shadow-sm">
+        <img alt="Cambio de fluidos" class="bd-placeholder-img card-img-top" width="100%" height="225" src="{{url_for('static', filename='images/cambio-de-aceite.jpg')}}"/>
+        <div class="card-body">
+          <p class="card-text">Cambio de fluidos</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card shadow-sm">
+        <img alt="problemas electricos" class="bd-placeholder-img card-img-top" width="100%" height="225" src="{{url_for('static', filename='images/problemas-electricos.jpg')}}"/>
+        <div class="card-body">
+          <p class="card-text">Solucion de problemas electricos</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card shadow-sm">
+        <img alt="Repuestos y accesorios" class="bd-placeholder-img card-img-top" width="100%" height="225" src="{{url_for('static', filename='images/lubricentro.jpeg')}}"/>
+        <div class="card-body">
+          <p class="card-text">Repuestos y accesorios</p>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="btn-group">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+{% endblock %}

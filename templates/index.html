@@ -1,0 +1,73 @@
+{% extends './base.html' %} {% block title %} Inicio {% endblock %} {% block
+inicioActive %} active {% endblock %} 
+{% block body %}
+<section
+  class="position-relative overflow-hidden p-3 p-md-5 text-center container section-main"
+>
+  <div class="row py-lg-5">
+    <div class="col-lg-8 col-md-12 mx-auto">
+      <img
+        src="{{url_for('static', filename='images/logozoel-transparente.png')}}"
+        alt="Logo ZoelRacing"
+        height="250"
+        class="image-responsive"
+      />
+    </div>
+  </div>
+  <h3 class="text-light mt-5">Taller Especialista En Mecánica De Motos</h3>
+  <div class="container">
+    <p class="text-light">
+      ZoelRacing se especializa en servicios de mecánica integral completa y
+      mecánica ligera de las motos. Realizamos arreglos generales como el 
+      mantenimiento de todas las marcas y modelos. En ZoelRacing se trabaja
+      arduamente para que tengas tu moto lista en tiempo y forma. No dudes
+      en venir a nuestro taller por una emergencia que aquí te ayudaremos,
+      ya que nuestro objetivo es brindarte el mejor servicio de mecánica
+      posible. 
+     <a href="/contactos">CONTACTENOS</a> 
+    </p>
+    <p class="text-light">Estamos ubicados en hernandarias 831, para mas info ingrese a 
+      <a href="/ubicacion">UBICACION</a>
+    </p>
+  </div>
+  <h5 class="text-light">
+    Estamos abiertos desde las 8hs a las 18hs
+  </h5>
+
+  <article class="container text-center mt-5">
+    <h3 class="text-light">¿Por qué debes elegir el taller ZoelRacing?</h3>
+    <ul style="list-style-type: none" class="container">
+      <li style="color: aliceblue;">
+        ZoelRacing garantiza profesionalismo, honestidad, calidad y excelencia
+        en todos los trabajos que se realicen en el taller.
+      </li>
+      <li class="text-light">
+        ZoelRacing cuenca con mecánicos especializados.
+      </li>
+      <li class="text-light">
+        Consultas gratuitas para todo lo relacionado con mecánica de motos. 
+      </li>
+      <li class="text-light">
+        Contamos con los mejores precios en relación calidad precio.
+      </li>
+      <li class="text-light">
+        Te brindamos garantía del trabajo realizado.
+      </li>
+    </ul>
+  </article>
+  <h3 class="text-light mt-5">No dude en consultarnos</h3>
+  <p class="text-light">
+    Si desea saber los servicios que ofrecemos, vaya a la sección
+    <a href="/servicios">Servicios</a>
+  </p>
+  <p class="text-light mt-5">Hacemos consultas sin costo, de 8 a 18hs.</p>
+  <h3 class="text-light mt-5">Métodos de pago</h3>
+  <h5 class="text-light mt-5">Aceptamos efectivo y transferencia directa.</h5>
+</section>
+<section>
+  <p style="color: rgb(255, 255, 255);">
+    Aquí también vendemos y compramos repuestos, si eres un vendedor no 
+    dudes en consultarnos a nuestros <a href="/contactos">CONTACTOS</a>. desde ya muchas gracias.
+  </p>
+</section>
+{% endblock %}

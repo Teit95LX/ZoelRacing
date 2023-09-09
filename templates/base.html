@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Phudu:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>{% block title %} {% endblock %} - Zoel Racing</title>
+    <meta name="description" content="Taller especialista en mecanica de motos, arreglamos todo tipo de motos, honda, yamaha, suzuki, kawasaki, BMW. Somos el mejor taller de todo Buenos Aires, de toda la Argentina, somos baratos, buenos, el mejor taller." />
+    <meta name="keywords" content="motos, taller, mecanicos, servicio, mejor, barato, Honda, Yamaha, Suzuki, Kawasaki, BMW, taller">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="{{url_for('static', filename='CSS/styles.css')}}"
+    />
+    <link rel="icon" href="static/images/iconozoel-removebg-preview.png" />
+  </head>
+  <body>
+    <header class="navbar navbar-expand-lg bg-body-secondary border-bottom">
+      <nav class="container-fluid container">
+        <a
+          href="/"
+          class="d-flex align-items-center my-1 me-md-auto link-body-emphasis text-decoration-none"
+        >
+          <img 
+            src="{{url_for('static', filename='images/logozoel-transparente.png')}}"
+            alt="Logo de la marca"
+            width="120"
+            height="39"
+            aria-label="logo de la marca"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav container-fluid d-flex justify-content-end">
+            <li class="nav-item">
+              <a class="nav-link {% block inicioActive %}  {% endblock %}" href="/">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link {% block serviciosActive %}  {% endblock %}" href="{{url_for('servicios') }}">Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link {% block contactoActive %}  {% endblock %}" href="{{url_for('contacto') }}">Comunícate</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link {% block ubicacionActive %}  {% endblock %}" href="{{url_for('ubicacion') }}">Ubicación</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>{% block body %} {% endblock %}</main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+
+    <a
+      href="https://api.whatsapp.com/send?phone=5491126792534"
+      class="btn-wsp"
+      target="_blank"
+      aria-label="whatsapp"
+    >
+      <i class="fa-brands fa-whatsapp"></i>
+    </a>
+    <div class="lines-red">
+      <div class="line1"></div> 
+      <div class="line2"></div> 
+      <div class="line3"></div> 
+    </div>
+  </body>
+</html>

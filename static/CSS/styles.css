@@ -1,0 +1,147 @@
+body {
+  background-image: url("/static/images/background1.png");
+  background-attachment: fixed;
+  font-family: 'Phudu', cursive;
+  height: 100vh;
+  position: relative;
+}
+
+.image-responsive{
+  max-width: 100%;
+  height: auto;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+main {
+  padding: 24px;
+  min-height: calc(100vh - 89px);
+}
+
+.btn-wsp{
+  transition: all ease 250ms;
+  position: fixed;
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+  bottom: 20px;
+  right: 20px;
+  background: rgb(2, 228, 28);
+  color: aliceblue;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+  z-index: 100;
+}
+
+.btn-wsp:hover{
+  text-decoration: none;
+  color: rgb(2, 228, 28);
+  background: aliceblue ;
+  border-radius: 50px;
+}
+
+.nav-item{
+  transition: all ease 0.3s;
+}
+
+.nav-item > a:hover{
+  transform: scale(1.05);
+}
+
+.btn-contact {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+  width: fit-content;
+}
+
+.btn-contact .btn-contact--icon {
+  text-decoration: none;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  color: aliceblue;
+  border-radius: 55px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
+  z-index: 100;
+  bottom: 30px;
+  right: 30px;
+}
+
+.btn-contact .btn-contact--icon:hover {
+  text-decoration: none;
+}
+
+.btn-contact .btn-contact--icon.telefono {
+  background: rgb(2, 2, 253);
+}
+
+.btn-contact .btn-contact--icon.telefono:hover {
+  color: rgb(2, 2, 228);
+  background: aliceblue;
+}
+
+.btn-contact .btn-contact--icon.telefono > i {
+  animation-name: none;
+}
+
+.btn-contact .btn-contact--icon.telefono:hover > i {
+  animation-name: fa-shake;
+}
+
+.btn-ws {
+  background: rgb(2, 228, 28);
+}
+
+.btn-ws:hover {
+  color: rgb(2, 228, 28);
+  background: aliceblue;
+}
+
+.btn-ig {
+  color: rgb(250, 250, 250);
+  background: #d6249f;
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+}
+
+.btn-ig:hover {
+  background: rgb(255, 255, 255);
+  color: rgb(201, 5, 255);
+}
+
+.btn-sms{
+  color: rgb(255, 255, 255);
+  background: rgb(4, 0, 253); 
+}
+
+.lines-red {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+.lines-red > div {
+  width: 100%;
+  background-color: hsl(356, 96%, 43%);
+}
+.line1 {
+  height: 3px;
+}
+
+.line2 {
+  height: 5px;
+  margin-top: 3px;
+}
+
+.line3 {
+  height: 11px;
+  margin-top: 3px;
+}

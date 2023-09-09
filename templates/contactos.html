@@ -1,0 +1,93 @@
+{% extends './base.html' %}
+
+{% block title %}
+      Contactos
+{% endblock %}
+
+{% block contactoActive %}
+      active
+{% endblock %} 
+
+{% block body %}
+
+<section class="container">
+      
+  <h1 class="text-light">Contactos</h1>
+  <article class="col-sm">
+      <div class="row">
+      <article class="col-sm">
+      <h2 class="text-light">Links</h2>
+      <ul style="list-style-type: none; padding: 0;">
+        <li>
+          <a href="tel: 1126792534" class="btn-contact" target="_blank">
+            <div class="telefono btn-contact--icon">
+            <i class="fa-solid fa-phone fa-shake"></i>
+            </div>
+            Numero de telefono: 11 2679-2534
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://wa.me/5491126792534?text=¡Arreglo+Tu+Moto!"
+            target="_blank"
+            class="btn-contact"
+          >
+            <div class="btn-ws btn-contact--icon">
+              <i class="fa-brands fa-whatsapp"></i>
+            </div>
+            Escribeme al WhatsApp
+          </a>
+        </li>
+        <li>
+          <a
+            href="https://instagram.com/zoel.racing?igshid=MzRlODBiNWFlZA=="
+            target="_blank"
+            class="btn-contact"
+          >
+            <div class="btn-ig btn-contact--icon">
+                  <i class="fa-brands fa-instagram"></i>
+            </div>
+            Sigueme en Instagram</a
+          >
+        </li>
+        <li>
+            <a
+              href="sms:1126792534"
+              target="_blank"
+              class="btn-contact"
+            >
+              <div class="btn-sms btn-contact--icon">
+                  <i class="fa-solid fa-comment-sms"></i>
+              </div>
+              Enviame un SMS</a
+            >
+          </li>
+      </ul>
+    </article>
+    <article class="col-sm mt-5 mt-md-0">
+      <h2 class="text-light">Taller de autos</h2>
+      <a href="https://afsport.com.ar/" target="_blank">
+      <img class = image-responsive
+      src="{{url_for('static', filename='images/Afsport.jpeg')}}"
+      alt = "Enlace a la pagina de taller de autos, con la que compartimos el local"
+      />
+      </a>
+      <li>
+            <a
+              style="color: red"
+              href="https://afsport.com.ar/"
+              target="_blank"
+              class="btn-contact"
+            >
+              Compartimos el taller con AfSport Mecanico del Automotor
+            </a>
+          </li>
+          <p class="text-light mt-5">El taller ZoelRacing comparte localidad con el taller automotor
+            AfSport, para mas informacion visite su pagina haciendo click en la foto del logo AfSport
+            o en las letras resaltadas en rojo.
+          </p>
+    </article>
+  </div>
+</section>
+
+{% endblock %}
